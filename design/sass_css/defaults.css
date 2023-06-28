@@ -1,4 +1,76 @@
 @charset "UTF-8";
+.colorGreen {
+  color: #9DB33E;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#main {
+  padding: 0;
+  background-image: url(../../pictures/tree.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* HEADER */
+header {
+  color: #9DB33E;
+  background-color: #3A3838;
+}
+
+/* NAV */
+#logo {
+  height: 8rem;
+}
+
+/* underline decoration */
+.nav-link {
+  color: #9db33e !important;
+  font-size: 1.3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #9DB33E;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* END underline decoration */
+span {
+  color: #9DB33E;
+}
+
+/* MEDIA */
+@media all and (max-width: 1000px) {
+  /* HEADER*/
+  #logo {
+    height: 5rem;
+  }
+  /* NAV */
+}
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10816,92 +10888,5 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
-  }
-}
-.colorGreen {
-  color: #9DB33E;
-}
-
-html, body {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#main {
-  padding: 0;
-  background-image: url(../../pictures/tree.jpg);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
-}
-
-/* HEADER */
-header {
-  color: #9DB33E;
-  background-color: #3A3838;
-}
-
-div.container-fluid, div.container-sm, div.container-md, div.container-lg, div.container-xl, div.container-xxl {
-  justify-content: space-evenly !important;
-}
-
-/* NAV */
-.nav-link {
-  color: #9db33e !important;
-  font-size: 1.3rem;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: #9DB33E;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-
-#logo {
-  height: 10rem;
-}
-
-span {
-  color: #9DB33E;
-}
-
-#toggleNavButton {
-  display: none; /* Masquer le bouton sur les appareils de taille supérieure */
-}
-
-/* MEDIA */
-@media all and (max-width: 1000px) {
-  /* HEADER*/
-  #logo {
-    height: 5rem;
-  }
-  /* NAV */
-  #toggleNavButton {
-    display: block; /* Afficher le bouton sur les appareils de taille inférieure */
-  }
-  #navLinks {
-    display: none; /* Masquer les liens de navigation par défaut */
-  }
-  #navLinks.open {
-    display: block; /* Afficher les liens de navigation lorsqu'ils sont ouverts */
   }
 }/*# sourceMappingURL=defaults.css.map */
