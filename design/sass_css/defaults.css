@@ -59,8 +59,8 @@ header {
 }
 
 /* END underline decoration */
-span {
-  color: #9DB33E;
+.navbar-toggler {
+  color: #9DB33E !important;
 }
 
 /* MEDIA */
