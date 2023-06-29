@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="container-fluid" id="main">
-         <?PHP include '../src/header.php' ?>
+         <?PHP include '../src/header.html' ?>
         </div>
         <script type="module" src="../node_modules/bootstrap/"></script>
  
